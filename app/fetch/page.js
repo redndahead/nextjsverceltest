@@ -1,9 +1,14 @@
 async function getData() {
   console.log(process.env.AT_URL)
-  console.log(process.env.TOKEN)
-  const res = await fetch(process.env.AT_URL, {
-    headers: {Authentication: 'Bearer ' + process.env.TOKEN}
-  })
+  
+  const options = {
+    headers: {
+      Authentication: 'Bearer ' + process.env.TOKEN
+    }
+  }
+
+  console.log(options)
+  const res = await fetch(process.env.AT_URL, options)
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
 
