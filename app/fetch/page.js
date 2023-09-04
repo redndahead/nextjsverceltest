@@ -13,7 +13,7 @@ async function getData() {
   return res.json()
 }
  
-export default async function Page() {
+export default async function Fetch() {
   const data = await getData()
   console.log(data);
   return <main></main>
