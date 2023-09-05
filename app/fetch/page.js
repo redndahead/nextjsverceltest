@@ -11,7 +11,7 @@ async function getData() {
   //  }
  // }
   const at_url = "https://api.publicapis.org/entries"
-  const option = {}
+  const options = {}
   const res = await fetch(process.env.AT_URL, options)
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
