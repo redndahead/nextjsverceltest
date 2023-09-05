@@ -1,9 +1,6 @@
 async function getData() {
   console.log(process.env.AT_URL)
   
-  
-
-  console.log(options)
   //const at_url = process.env.AT_URL
   //const options = {
   //  headers: {
